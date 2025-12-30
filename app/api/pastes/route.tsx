@@ -39,7 +39,7 @@ export async function POST(req: Request) {
         }
 
         const id = nanoid(8);
-        const now = getNow(req);
+        const now = Date.now();
 
         const paste: Paste = {
             content,
